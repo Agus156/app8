@@ -22,7 +22,7 @@ function getPosition(){
 	
 	function onSuccess(position){
 		
-		alert('Latitude:'   +postion.coords.latitude  +'\n'+
+		alert('Latitude:'   +position.coords.latitude  +'\n'+
 		'Longitude: '  +position.coords.longitude  +'\n');
 	};
 	
