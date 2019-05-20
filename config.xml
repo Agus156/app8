@@ -33,7 +33,7 @@ Agustin Uriel Ramos Zuñiga
 
 
 <!--Plugin para geolocalizar-->
-<plugin name="cordova-pugin-geolocation" spec="2.4.3"/>
+<plugin name="cordova-plugin-geolocation" spec="2.4.3"/>
 
 <!--Para accesar a paginas en internet-->
 <allow-intent href="https://*/*"/>
