@@ -24,7 +24,24 @@ navigator.geolocation.getCurrentPosition(function(location) {
 		});
 	}
 	initMap();
-});
+	});
+	function showError(error)
+	{
+		switch(error.code)
+		{
+		case error:PERMISSION_DENIED:
+		x.innerHTML="Denegada la petecion de Geolocalización en el navegador."
+		break;
+		case error:POSITION_UNAVAILABLE:
+		x.innerHTML="La informacion de la localizacion no esta disponible."
+		break;
+		case error:TIMEOUT:
+		x.innerHTML="El tiempo de peticion ha expirado."
+		break;
+		case error:UNKNOWN_ERROR
+		x.innerHTML="Ha ocurrido un error desconocido."
+		break;
+	}
 </script>
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFd0aiE5FttY8XRAFI9ecTSpgo2vP-qMk">
