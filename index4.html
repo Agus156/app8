@@ -7,7 +7,7 @@
 <div id="map" style="width:100%;height:600px;"></div>
 
 <script>
-navigator.geolocation.getCurrentPosition(function(location) {
+navigator.geolocation.getCurrentPosition(function(location,showError) {
   console.log(location.coords.latitude);
   console.log(location.coords.longitude);
 	var map;
@@ -24,8 +24,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
 		});
 	}
 	initMap();
-	});
-	function showError(error)
+		function showError(error)
 	{
 		switch(error.code)
 		{
@@ -42,6 +41,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
 		x.innerHTML="Ha ocurrido un error desconocido."
 		break;
 	}
+	});
 </script>
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFd0aiE5FttY8XRAFI9ecTSpgo2vP-qMk">
